@@ -1,0 +1,187 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: skyblue;
+}
+
+/*Make navbar texts white*/
+.nav.navbar-nav li a {
+    color: white;
+}
+
+/*Navbar hover color*/
+li:hover {
+    background-color: deepskyblue;
+}
+
+/*Navbar active page background color*/
+.omavari {
+    background-color: deepskyblue;
+}
+
+/*logo settings*/
+.navbar-header.navbar-brand{
+    /*padding-bottom: 0px !important;
+    padding-top: 3px !important;*/
+    color: white;
+}
+
+/*fonts etc*/
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    margin: 0px;
+    flex: fit-content;
+    flex-direction: row;
+}
+
+/*vanhaa koodia*/
+#trainContainer {
+    overflow-x:auto;
+}
+
+/*hover on table row*/
+tr:hover {
+    background-color: deepskyblue!important;
+    color: white;
+}
+
+/*table settings*/
+table {
+    border-collapse: collapse;
+    display: table;
+    border-spacing: 0;
+    width: 100%;
+}
+
+/*table row settings*/
+th, td {
+    box-sizing: border-box;
+    text-align: left;
+    padding: 8px;
+    border-spacing: 0;
+    border: none;
+}
+
+/*link settings*/
+a {
+    color: inherit;
+    opacity: 90%;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*link hover*/
+a:hover {
+    text-shadow: 1px 1px black;
+    color: floralwhite!important;
+
+}
+
+/*every other table row*/
+tr:nth-child(even), thead {
+    background-color: skyblue;
+    color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: none;
+}
+
+.sticky + #quotes {
+    padding-top: 102px;
+}
+
+/*search form button*/
+#btn{
+    color:white;
+    background-color: skyblue;
+}
+
+/*search form font not bold*/
+.lomake{
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+/*search form borders*/
+.haku{
+    border: deepskyblue 1px solid;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    margin-top: 15px;
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+/*sidenav well padding*/
+.well{
+    padding: 0px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+    background-color: skyblue;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .row.content {
+        height: auto;
+    }
+}
+/*dropdown menu on menubar*/
+.dropdown-menu{
+    background-color: skyblue;
+    color:skyblue;
+}
+
+/*container settings*/
+.container {
+    flex: auto;
+    flex-direction: row;
+    align-content: center;
+}
+
+/*header style*/
+.header {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 32px;
+    background-color: skyblue;
+    color: ghostwhite;
+    display: block;
+    width: 100%;
+}
+
+/*"logo" white*/
+.navbar>.container-fluid .navbar-brand{
+    color: white;
+}
+
+
+

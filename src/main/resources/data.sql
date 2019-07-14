@@ -1,0 +1,1 @@
+INSERT INTO task (name) VALUES('vie roskat'),('tee ruokaa'),('ulkoiluta koira');
