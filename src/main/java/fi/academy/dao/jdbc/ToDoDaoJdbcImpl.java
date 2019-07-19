@@ -95,7 +95,21 @@ public class ToDoDaoJdbcImpl implements ToDoDao {
 
     //tulee myöhemmin
     @Override
-    public boolean modify(int id, Task name) {
-        return false;
+    public boolean modify(int id, Task uusi) {
+        String sql = "UPDATE task SET name = ? WHERE id = ?";
+        try (PreparedStatement stmt = con.prepareStatement(sql)) {
+            stmt.setString(1, uusi.getName());
+            stmt.setInt(2, id);
+            stmt.execute();
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                uusi.setId(rs.getInt("id"));
+                uusi.setName(rs.getString("name"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return true;
     }
 }

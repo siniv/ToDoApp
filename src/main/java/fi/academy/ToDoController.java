@@ -61,7 +61,7 @@ public class ToDoController {
                 .body(new Virheviesti(String.format("Id %d ei ole olemassa: ei poistettu", id)));
     }
 
-    /*toteutetaan myöhemmin
+
     @PutMapping("/{id}")
     public ResponseEntity<?> muokkaa(@RequestBody Task tiedot,
                                      @PathVariable("id") int id) {
@@ -73,6 +73,6 @@ public class ToDoController {
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
                 .body(new Virheviesti(String.format("Id %d ei ole olemassa: ei muutettu", id)));
-    }*/
+    }
 
 }
